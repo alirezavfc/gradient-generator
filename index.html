@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple gradient background generator built with HTML, CSS and JavaScript.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Gradient Background Generator</title>
+</head>
+
+<body>
+    <h1>Gradient Background Generator</h1>
+
+    <section>
+        <h3>Choose your colors:</h3>
+
+        <div class="inputs">
+            <label for="color-one">
+            Primary Color
+            </label>
+            <input 
+            type="color" name="color-one" id="color-one" value="#39a3b1">
+        </div>
+        
+
+        <div class="inputs">
+            <label for="color-two">
+            Secondary Color
+            </label>
+            <input
+            type="color" name="color-two" id="color-two" value="#00e1ff">
+        </div>
+        
+    </section>
+    
+    <section>
+        <h3>Choose a direction:</h3>
+
+        <label for="direction">Direction:</label>
+        <select id="direction">
+            <option value="to bottom" selected>Top to Bottom</option>
+            <option value="to top">Bottom to Top</option>
+            <option value="to left">Right to Left</option>
+            <option value="to right">Left to Right</option>
+            <option value="to bottom right">Top-Right to Bottom-Left</option>
+            <option value="to bottom left">Top-Left to Bottom-Right</option>
+        </select>
+    </section>
+
+    <section>
+        <h3>Your code is:</h3>
+        
+            <code id="color-code">linear-gradient(to bottom, #39a3b1, #00e1ff);</code>
+        
+    </section>
+
+    <section>
+        <h3>Your color:</h3>
+        <div id="color-box">   
+        </div>
+    </section>    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
